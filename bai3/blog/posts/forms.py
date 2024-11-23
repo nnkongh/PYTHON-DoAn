@@ -6,6 +6,5 @@ from wtforms.validators import DataRequired
 class PostForm(FlaskForm):
     title = StringField('Tiêu đề', validators=[DataRequired()])
     content = TextAreaField('Content', validators=[DataRequired()])
-    image = FileField('Thêm ảnh',validators=[FileAllowed(['jpg','png'])])
     submit = SubmitField('Đăng')
 
